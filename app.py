@@ -6,7 +6,7 @@ import plotly.graph_objs as go  # Import plotly graph objects
 
 def jacobian_eigenvalues():
     A = np.array([[0, 1], [0, 0]])  # Jacobian matrix for this system
-    eigenvalues =np.linalg.eig(A)
+    eigenvalues =np.linalg.eigvals(A)
     return eigenvalues
 
 # Display equations used in the model
